@@ -12,7 +12,7 @@ class Config:
     return "Groq".split(", ")#self.config["DEFAULT"]["LLM_OPTIONS"].split(", ")
 
   def get_usecase_option(self):
-    return "Basic Chatbot, Chatbot with Tool, Travel Planner, AI News, SDLC Workflow".split(", ") #self.config["DEFAULT"]["USECASE_OPTIONS"].split(", ")
+    return "Basic Chatbot, Chatbot with Tools, Travel Planner, AI News, SDLC Workflow".split(", ") #self.config["DEFAULT"]["USECASE_OPTIONS"].split(", ")
 
   def get_groq_model_option(self):
     return "mixtral-8x7b-32768, llama3-8b-8192, llama3-70b-8192, gemma-7b-i".split(", ") #self.config["DEFAULT"]["GROQ_MODEL_OPTIONS"].split(", ")

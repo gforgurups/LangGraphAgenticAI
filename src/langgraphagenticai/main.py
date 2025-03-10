@@ -4,6 +4,9 @@ from src.langgraphagenticai.ui.streamlitui.loadui import LoadStreamlitUI
 from src.langgraphagenticai.LLMs.groqllm import GroqLLM
 from src.langgraphagenticai.graphs.graph_builder import GraphBuilder
 from src.langgraphagenticai.ui.streamlitui.display_result import DisplayResultStreamlit
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def load_langgraph_agenticai_app():
   ui = LoadStreamlitUI()

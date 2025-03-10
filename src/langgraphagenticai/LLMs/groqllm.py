@@ -14,8 +14,8 @@ class GroqLLM:
         st.error("Please enter Groq API Key")
       selected_groq_model = self.user_controls_input['selected_groq_model']
       llm = ChatGroq(api_key=groq_api_key, model=selected_groq_model)
-      return llm
+
     except Exception as e:
       return ValueError(f"Error occurred :{e}")
-
+    return llm
 
